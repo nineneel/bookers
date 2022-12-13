@@ -1,16 +1,13 @@
-# bookers
+# Bookers
 
-A new Flutter project.
+Project Akhir, PGMB APLIKASI PLATFORM MOBILE
 
-## Getting Started
+## App Overview
 
-This project is a starting point for a Flutter application.
+Aplikasi ini adalah aplikasi daftar buku perpustakaan.
+Para pengguna perpustakaan yang ingin mencari buku yang mereka inginkan dapat menggunakan aplikasi ini untuk memudahkan pencarian mereka, karena didalam aplikasi terdapat **lokasi** buku pada setiap detail buku yang di pilih oleh pengguna.
 
-A few resources to get you started if this is your first Flutter project:
+Aplikasi ini akan menggunakan API dari web yang telah kami buat, dimana pada web tersebut admin dapat melakukan CRUD pada setiap buku yang terdaftar pada perpusatakaan. berikut adalah repositori dari website bookers yang kami buat
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-   [Restfull API | Back-end Bookers](https://github.com/lnrjsX/bookers-back-end/)
+-   [Demo Aplikasi] (https://github.com/lnrjsX/bookers-back-end)

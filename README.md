@@ -10,4 +10,4 @@ Para pengguna perpustakaan yang ingin mencari buku yang mereka inginkan dapat me
 Aplikasi ini akan menggunakan API dari web yang telah kami buat, dimana pada web tersebut admin dapat melakukan CRUD pada setiap buku yang terdaftar pada perpusatakaan. berikut adalah repositori dari website bookers yang kami buat
 
 -   [Restfull API | Back-end Bookers](https://github.com/lnrjsX/bookers-back-end/)
--   [Demo Aplikasi] (https://github.com/lnrjsX/bookers-back-end)
+-   [Demo Aplikasi](https://github.com/lnrjsX/bookers-back-end)

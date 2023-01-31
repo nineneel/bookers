@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:bookers/constants.dart';
+import 'package:bookers/models/user.dart';
 import 'package:bookers/screens/home/home_screen.dart';
 import 'package:bookers/screens/menu/menu.dart';
 import 'package:bookers/screens/sign_in/sign_in.dart';
@@ -39,6 +40,8 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
+  User user = new User(id: 1, email: "prasetio@email.com", name: "Prasetio");
+
   @override
   void initState() {
     super.initState();
@@ -47,7 +50,6 @@ class _SplashState extends State<Splash> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => SignIn()),
-        // MaterialPageRoute(builder: (context) => HomeScreen()),
       ),
     );
   }

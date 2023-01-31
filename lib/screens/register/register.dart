@@ -24,32 +24,32 @@ class _RegisterState extends State<Register> {
   String password = "";
 
   createAccountPressed() async {
-    final bool emailValid = RegExp(
-            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-        .hasMatch(email);
+    // final bool emailValid = RegExp(
+    //         r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+    //     .hasMatch(email);
 
-    if (emailValid) {
-      http.Response response =
-          await AuthServices.register(name, email, password);
+    // if (emailValid) {
+    //   http.Response response =
+    //       await AuthServices.register(name, email, password);
 
-      Map responseMap = jsonDecode(response.body);
-      if (response.statusCode == 200) {
-        User user = User.fromJson(responseMap.values.first);
-
-        Navigator.push(
-          this.context,
-          MaterialPageRoute(
-            builder: (BuildContext context) => Menu(
-              user: user,
-            ),
-          ),
-        );
-      } else {
-        errorSnackBar(this.context, responseMap.values.first[0]);
-      }
-    } else {
-      errorSnackBar(this.context, "email not valid");
-    }
+    //   Map responseMap = jsonDecode(response.body);
+    //   if (response.statusCode == 200) {
+    // User user = User.fromJson(responseMap.values.first);
+    User user = new User(id: 1, email: "prasetio@email.com", name: "Prasetio");
+    Navigator.push(
+      this.context,
+      MaterialPageRoute(
+        builder: (BuildContext context) => Menu(
+          user: user,
+        ),
+      ),
+    );
+    // } else {
+    //   errorSnackBar(this.context, responseMap.values.first[0]);
+    // }
+    // } else {
+    //   errorSnackBar(this.context, "email not valid");
+    // }
   }
 
   @override
